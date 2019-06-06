@@ -3,8 +3,8 @@ import logo from './icon.png';
 
 
 class SearchBar extends Component{
-    constructor(props){
-        super (props);
+    constructor(){
+        super ();
 
         this.state ={ term: ''};
         this.handleSearch = this.handleSearch.bind(this);
@@ -13,7 +13,6 @@ class SearchBar extends Component{
     handleSearch(event)
     {
       this.setState({term: event.target.value});
-      //this.props.onSearchTermChange(event.target.value);
     }
 
     handleGoClick (event) {
